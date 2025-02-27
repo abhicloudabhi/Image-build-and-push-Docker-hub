@@ -37,7 +37,6 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/springboot-app:${{ github.run_number }}
-            ${{ secrets.DOCKER_USERNAME }}/springboot-app:${{ github.sha }}
 
       - name: Logout from Docker Hub
         run: docker logout
